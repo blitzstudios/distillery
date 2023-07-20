@@ -35,7 +35,8 @@ defmodule Distillery.Mixfile do
       dialyzer_ignored_warnings: [
         {:warn_contract_supertype, :_, {:contract_supertype, [:_, :impl_for, 1, :_, :_]}},
         {:warn_contract_supertype, :_, {:contract_supertype, [:_, :impl_for!, 1, :_, :_]}}
-      ]
+      ],
+      prune_code_paths: false
     ]
   end
 
